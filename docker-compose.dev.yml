@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  api:
+    restart: always
+    build: ./src
+    image: 127.0.0.1:5000/abc_api
+    env_file:
+      - .env
+    ports:
+      - 3006:8080
+    networks:
+      - abc
+    deploy:
+      replicas: 1
+    volumes:
+      - ./src/content/:/source/src/content/:rw
+
+networks:
+  abc:
+    external: True

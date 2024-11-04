@@ -1,0 +1,7 @@
+{
+  "text": "Welcome {name} to {company_name} Education Services. You have successfully enrolled in text message notifications.",
+  "email": {
+    "subject": "Your bulk import of students has completed.",
+    "body": "<p>Hey {email},</p><p>This email is being sent to notify you that your bulk import of students for file: {file_name} has been completed.</p><p>While adding students, {failed_amount} failed.</p><p>{failed_users_text}</p>{failed_users}<p>Respectfully,</p><p>{company_name}</p><p>P: {company_phone}</p><p>E: {company_email}</p>"
+  }
+}
